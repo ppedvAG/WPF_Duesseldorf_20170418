@@ -1,0 +1,36 @@
+﻿<Window x:Class="Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:Resources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush x:Key="defaultBackgroundColor" Color="#FFBAF153" />
+        <sys:Double x:Key="defaultWidth">50.6</sys:Double>
+    </Window.Resources>
+    
+    <StackPanel Margin="50">
+        <Button Content="Static Resource Change Value" 
+                Background="{StaticResource defaultBackgroundColor}"
+                Click="StaticResourceChangeValue"/>
+        
+        <Button Content="Static Resource Change Instance" 
+                Background="{StaticResource defaultBackgroundColor}"
+                Click="StaticResourceChangeInstance"/>
+        <Button Content="Dynmic Solid Color Brush" Background="{DynamicResource defaultBackgroundColor}" />
+        
+        <Button Content="Hallo" Background="{DynamicResource defaultBackgroundColor}"
+                Click="DynamicResourceOtherType"/>
+
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <SolidColorBrush x:Key="defaultBackgroundColor" Color="Blue" />
+            </StackPanel.Resources>
+            
+            <Button Content="Hallo" Background="{StaticResource defaultBackgroundColor}" />
+        </StackPanel>
+    </StackPanel>
+</Window>
