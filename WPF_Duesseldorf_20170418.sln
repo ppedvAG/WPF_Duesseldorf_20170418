@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloWPF", "HalloWPF\HalloW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{D090B2BA-5087-4B6C-8C2D-4BE3F831C296}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styles", "Styles\Styles.csproj", "{4330B164-4DA8-4019-9354-502B4F734833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D090B2BA-5087-4B6C-8C2D-4BE3F831C296}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D090B2BA-5087-4B6C-8C2D-4BE3F831C296}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D090B2BA-5087-4B6C-8C2D-4BE3F831C296}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4330B164-4DA8-4019-9354-502B4F734833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4330B164-4DA8-4019-9354-502B4F734833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4330B164-4DA8-4019-9354-502B4F734833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4330B164-4DA8-4019-9354-502B4F734833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
