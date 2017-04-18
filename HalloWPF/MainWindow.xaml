@@ -6,7 +6,113 @@
         xmlns:local="clr-namespace:HalloWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!--<Canvas>
+
+        <Ellipse Canvas.Top="50"
+                 Canvas.Left="80"
+                 Canvas.ZIndex="1"
+                 Fill="Blue"
+                 Height="100"
+                 Width="100" />
+
+        <Rectangle Canvas.Top="80"
+                   Canvas.Left="150"
+                   Fill="Green"
+                   Height="50" Width="50" />
+
+    </Canvas>-->
+    <!--<StackPanel Orientation="Horizontal">
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+    </StackPanel>-->
+    <!--<WrapPanel Orientation="Vertical">
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+        <Button Content="Click Me!" />
+    </WrapPanel>-->
+    <!--<ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <StackPanel>
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+            <Button Content="Click Me!" />
+        </StackPanel>
+    </ScrollViewer>-->
+    <!--<Viewbox Height="200" Width="300">
+        <Button Height="20" Width="50" Content="Hallo View Box" />
+    </Viewbox>-->
+    <!--<DockPanel LastChildFill="true">
+        <Button DockPanel.Dock="Top" Content="Top" />
+        <Button DockPanel.Dock="Top" Content="Top" />
+        <Button DockPanel.Dock="Left" Content="Left" />
+        <Button DockPanel.Dock="Top" Content="Top" />
+        <Button Content="Last Child Fill" />
+    </DockPanel>-->
+    <!--<Border Margin="50"
+            BorderBrush="Black"
+            BorderThickness="5"
+            Background="LightCoral"
+            CornerRadius="20">
+        <StackPanel>
+            <Rectangle Height="100" Width="100" 
+                       Fill="Blue" />
+            <Ellipse Height="100" Width="100"
+                     Fill="Green" />
+        </StackPanel>
+    </Border>-->
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Datei" />
+        </Menu>
         
+        <Rectangle Grid.Row="1" Fill="Blue" />
+        <Rectangle Grid.Row="2" Fill="Green" />
+        <Rectangle Grid.Row="20" Fill="Pink" />
     </Grid>
 </Window>
