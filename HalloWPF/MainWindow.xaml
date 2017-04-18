@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:HalloWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+
+    <!-- Layout Container -->
     <!--<Canvas>
 
         <Ellipse Canvas.Top="50"
@@ -116,7 +118,8 @@
         <Rectangle Grid.Row="20" Fill="Pink" />
     </Grid>-->
 
-    <Grid>
+    <!-- Layout Übung -->
+    <!--<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -142,5 +145,50 @@
             <Button Content="Ok" />
             <Button Content="Abbrechen" Margin="4 0 0 0" />
         </StackPanel>                    
-    </Grid>
+    </Grid>-->
+
+    <StackPanel Margin="50">
+        <!--<Image Source="Images/Sample.jpg"
+               Stretch="Uniform"/>-->
+        <!--<Image Source="http://lorempixel.com/g/400/200/"
+               Stretch="UniformToFill"/>-->
+
+        <Menu>
+            <MenuItem Header="Datei">
+                <MenuItem Header="Speichern" />
+                <Separator />
+                <MenuItem Header="Exit" />
+            </MenuItem>
+            <MenuItem Header="Bearbeiten">
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
+        </Menu>
+
+        <CheckBox IsChecked="True" Content="Checkbox" />
+        <CheckBox IsChecked="True" Content="Checkbox" />
+        <CheckBox IsChecked="True" Content="Checkbox" />
+
+        <StackPanel >
+            <RadioButton Content="RadioButton" />
+            <RadioButton Content="RadioButton" />
+        </StackPanel>
+        <StackPanel>
+            <RadioButton Content="RadioButton" />
+            <RadioButton Content="RadioButton" />
+        </StackPanel>
+
+        <Slider Minimum="0" 
+                Maximum="100"
+                Orientation="Horizontal"
+                TickPlacement="Both"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"/>
+
+        <ProgressBar IsIndeterminate="False" Value="50" Height="20"/>
+
+        <TextBox />
+
+    </StackPanel>
 </Window>
