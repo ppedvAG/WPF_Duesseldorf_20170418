@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding", "Binding\Binding.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSourceSelf", "RelativeSourceSelf\RelativeSourceSelf.csproj", "{E2AE4E0F-0A20-4250-82C4-CE587B91F398}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSourceTemplatedParent", "RelativeSourceTemplatedParent\RelativeSourceTemplatedParent.csproj", "{612D53DB-6D27-41E1-BCA7-F2C99186F434}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E2AE4E0F-0A20-4250-82C4-CE587B91F398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2AE4E0F-0A20-4250-82C4-CE587B91F398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2AE4E0F-0A20-4250-82C4-CE587B91F398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{612D53DB-6D27-41E1-BCA7-F2C99186F434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612D53DB-6D27-41E1-BCA7-F2C99186F434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612D53DB-6D27-41E1-BCA7-F2C99186F434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612D53DB-6D27-41E1-BCA7-F2C99186F434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
