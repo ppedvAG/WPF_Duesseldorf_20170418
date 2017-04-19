@@ -8,20 +8,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <SolidColorBrush x:Key="defaultBackgroundColor" Color="#FFBAF153" />
-        <sys:Double x:Key="defaultWidth">50.6</sys:Double>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="defaultBackgroundColor" Color="#FFBAF153" />
+            <sys:Double x:Key="defaultWidth">50.6</sys:Double>
+        </ResourceDictionary>
     </Window.Resources>
-    
+
     <StackPanel Margin="50">
         <Button Content="Static Resource Change Value" 
                 Background="{StaticResource defaultBackgroundColor}"
                 Click="StaticResourceChangeValue"/>
-        
+
         <Button Content="Static Resource Change Instance" 
                 Background="{StaticResource defaultBackgroundColor}"
                 Click="StaticResourceChangeInstance"/>
         <Button Content="Dynmic Solid Color Brush" Background="{DynamicResource defaultBackgroundColor}" />
-        
+
         <Button Content="Hallo" Background="{DynamicResource defaultBackgroundColor}"
                 Click="DynamicResourceOtherType"/>
 
@@ -29,7 +31,7 @@
             <StackPanel.Resources>
                 <SolidColorBrush x:Key="defaultBackgroundColor" Color="Blue" />
             </StackPanel.Resources>
-            
+
             <Button Content="Hallo" Background="{StaticResource defaultBackgroundColor}" />
         </StackPanel>
     </StackPanel>

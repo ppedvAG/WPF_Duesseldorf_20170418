@@ -98,6 +98,10 @@
         </StackPanel>
     </Border>-->
     <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="100"/>
@@ -105,17 +109,14 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
 
-        <Menu Grid.Row="0">
+        <Menu Grid.Row="0" Grid.ColumnSpan="2">
             <MenuItem Header="Datei" />
         </Menu>
-        
-        <Rectangle Grid.Row="1" Fill="Blue" />
-        <Rectangle Grid.Row="2" Fill="Green" />
-        <Rectangle Grid.Row="20" Fill="Pink" />
+
+        <Rectangle Grid.Row="1" Fill="Blue" Grid.ColumnSpan="2" />
+        <Rectangle Grid.Row="2" Fill="Green" Grid.ColumnSpan="2" />
+        <Rectangle Grid.Row="4" Fill="Pink" Grid.ColumnSpan="2" />
     </Grid>-->
 
     <!-- Layout Übung -->
@@ -148,14 +149,18 @@
     </Grid>-->
 
     <StackPanel Margin="50">
+
         <!--<Image Source="Images/Sample.jpg"
                Stretch="Uniform"/>-->
         <!--<Image Source="http://lorempixel.com/g/400/200/"
-               Stretch="UniformToFill"/>-->
+           Stretch="Fill"/>-->
 
         <Menu>
             <MenuItem Header="Datei">
-                <MenuItem Header="Speichern" />
+                <MenuItem Header="Speichern">
+                    <MenuItem Header="Alles" />
+                    <MenuItem Header="Alles" />
+                </MenuItem>
                 <Separator />
                 <MenuItem Header="Exit" />
             </MenuItem>
@@ -165,8 +170,8 @@
                 <MenuItem Command="Paste" />
             </MenuItem>
         </Menu>
-
-        <CheckBox IsChecked="True" Content="Checkbox" />
+        
+        <CheckBox IsChecked="{x:Null}" Content="Checkbox" />
         <CheckBox IsChecked="True" Content="Checkbox" />
         <CheckBox IsChecked="True" Content="Checkbox" />
 
@@ -178,7 +183,6 @@
             <RadioButton Content="RadioButton" />
             <RadioButton Content="RadioButton" />
         </StackPanel>
-
         <Slider Minimum="0" 
                 Maximum="100"
                 Orientation="Horizontal"
@@ -186,9 +190,9 @@
                 TickFrequency="10"
                 IsSnapToTickEnabled="True"/>
 
-        <ProgressBar IsIndeterminate="False" Value="50" Height="20"/>
 
-        <TextBox />
+        <ProgressBar IsIndeterminate="True" Value="20" Height="20"/>
+
 
     </StackPanel>
 </Window>

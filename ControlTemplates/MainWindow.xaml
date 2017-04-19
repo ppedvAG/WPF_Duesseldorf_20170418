@@ -27,7 +27,8 @@
     </Window.Resources>
 
     <StackPanel Margin="50">
-        <Button Content="Hallo Welt"/>
+        <Button Content="Hallo Welt" Height="50"/>
         <Button Name="myButton" Content="Hallo andere Welt" Click="myButton_Click"/>
     </StackPanel>
+    
 </Window>
