@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styles", "Styles\Styles.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTemplates", "ControlTemplates\ControlTemplates.csproj", "{C178FCCA-ED4B-4D56-8A7A-8C558C1FADEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutedEvents", "RoutedEvents\RoutedEvents.csproj", "{E51906CF-108E-4FCE-A518-2F90A433108A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C178FCCA-ED4B-4D56-8A7A-8C558C1FADEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C178FCCA-ED4B-4D56-8A7A-8C558C1FADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C178FCCA-ED4B-4D56-8A7A-8C558C1FADEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51906CF-108E-4FCE-A518-2F90A433108A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51906CF-108E-4FCE-A518-2F90A433108A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51906CF-108E-4FCE-A518-2F90A433108A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51906CF-108E-4FCE-A518-2F90A433108A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

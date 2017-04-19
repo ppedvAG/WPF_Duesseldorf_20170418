@@ -1,0 +1,52 @@
+﻿<Window x:Class="RoutedEvents.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoutedEvents"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="525">
+    
+    <Grid PreviewMouseDown="Grid_PreviewMouseDown"
+          MouseDown="Grid_MouseDown"
+          Name="Grid">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border Margin="50"
+                BorderBrush="Green"
+                BorderThickness="15"
+                Name="GreenBorder" 
+                PreviewMouseDown="GreenBorder_PreviewMouseDown"
+                MouseDown="GreenBorder_MouseDown">
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        PreviewMouseDown="StackPanel_PreviewMouseDown"
+                        MouseDown="StackPanel_MouseDown"
+                        Name="Stackpanel">
+
+                <Border Margin="50"
+                        BorderBrush="Red"
+                        BorderThickness="15"
+                        Name="RedBorder" 
+                        PreviewMouseDown="RedBorder_PreviewMouseDown"
+                        MouseDown="RedBorder_MouseDown"/>
+
+                <Border Margin="50"
+                        BorderBrush="Blue"
+                        BorderThickness="15"
+                        Name="BlueBorder"
+                        PreviewMouseDown="BlueBorder_PreviewMouseDown" />
+                
+            </StackPanel>
+        </Border>
+
+        <DataGrid Name="EventsDataGrid" Grid.Row="1" />
+        <Button Content="Clear" Grid.Row="2" Click="ClearButton_Clicked" />
+    </Grid>
+</Window>
