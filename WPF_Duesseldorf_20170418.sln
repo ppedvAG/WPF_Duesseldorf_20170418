@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiValueConverters", "Mul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{1A7CB05C-CDBC-4DB9-B1F7-A09DE595F410}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyTrigger", "PropertyTrigger\PropertyTrigger.csproj", "{B60AD269-07B0-4E18-9521-9037E5FCB158}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{1A7CB05C-CDBC-4DB9-B1F7-A09DE595F410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A7CB05C-CDBC-4DB9-B1F7-A09DE595F410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A7CB05C-CDBC-4DB9-B1F7-A09DE595F410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
