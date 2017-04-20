@@ -1,0 +1,59 @@
+﻿<Window x:Class="EventTriggerToFrameworkElement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EventTriggerToFrameworkElement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Triggers>
+        <!-- Das Bild verkleinern -->
+        <EventTrigger SourceName="minusButton"
+                      RoutedEvent="Button.Click">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="image"
+                                     Storyboard.TargetProperty="Width"
+                                     To="200"
+                                     Duration="0:0:0.5" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+
+        <!-- Das Bild vergrößern -->
+        <EventTrigger SourceName="plusButton"
+                      RoutedEvent="Button.Click">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="image"
+                                     Storyboard.TargetProperty="Width"
+                                     To="400"
+                                     Duration="0:0:0.5" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+
+    </Window.Triggers>
+   
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Name="minusButton" Height="30" Width="30" Content="-" />
+            <Button Name="plusButton" Height="30" Width="30" Content="+" Margin="10 0 0 0" />
+        </StackPanel>
+
+        <Image Grid.Row="1"
+               Name="image"
+               Width="300"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Source="http://lorempixel.com/400/200/abstract" Stretch="Uniform" />
+    </Grid>
+</Window>
