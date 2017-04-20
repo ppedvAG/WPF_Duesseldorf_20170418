@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyTrigger", "PropertyTrigger\PropertyTrigger.csproj", "{B60AD269-07B0-4E18-9521-9037E5FCB158}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrigger", "DataTrigger\DataTrigger.csproj", "{41D30D57-1CB0-46FA-B249-A38DBCAC8082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60AD269-07B0-4E18-9521-9037E5FCB158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
