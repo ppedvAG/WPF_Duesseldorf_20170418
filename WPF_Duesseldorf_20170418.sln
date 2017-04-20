@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyTrigger", "Property
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTrigger", "DataTrigger\DataTrigger.csproj", "{41D30D57-1CB0-46FA-B249-A38DBCAC8082}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTrigger", "EventTrigger\EventTrigger.csproj", "{7ED6D249-5B10-4D4B-9F9F-1049584C69BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41D30D57-1CB0-46FA-B249-A38DBCAC8082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED6D249-5B10-4D4B-9F9F-1049584C69BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED6D249-5B10-4D4B-9F9F-1049584C69BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED6D249-5B10-4D4B-9F9F-1049584C69BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED6D249-5B10-4D4B-9F9F-1049584C69BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
