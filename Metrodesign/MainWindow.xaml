@@ -1,0 +1,17 @@
+﻿<maha:MetroWindow x:Class="Metrodesign.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:maha="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Metrodesign"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Margin="20">
+
+        <TextBox maha:TextBoxHelper.Watermark="Username" />
+
+        <Button Content="Hallo" Margin="0 20 0 0"/>
+
+    </StackPanel>
+</maha:MetroWindow>
