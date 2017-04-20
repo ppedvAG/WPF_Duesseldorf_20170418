@@ -12,7 +12,7 @@ namespace Validation.ValidationRules
             if (int.TryParse(text, out int zahl) && zahl != 19)
                 return ValidationResult.ValidResult;
 
-            return new ValidationResult(false, "Zahl darf nicht 19 sein!");
+            return new ValidationResult(isValid: false, errorContent: "Zahl darf nicht 19 sein!");
         }
     }
 }

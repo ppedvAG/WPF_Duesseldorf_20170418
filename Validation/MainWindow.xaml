@@ -40,6 +40,8 @@
                     <Setter Property="ToolTip"
                             Value="{Binding RelativeSource={RelativeSource Self},
                                             Path=(Validation.Errors)[0].ErrorContent}" />
+                    <Setter Property="BorderBrush" Value="Red" />
+                    <Setter Property="BorderThickness" Value="5" />
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -59,5 +61,8 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
+
+
+        <TextBox Margin="0 20 0 0" />
     </StackPanel>
 </Window>

@@ -17,7 +17,7 @@
                      Height="20" Margin="0 8 0 0"
                      Value="{Binding ElementName=mySlider, Path=Value}"/>
 
-        <TextBlock Text="{Binding ElementName=mySlider, Path=Value, StringFormat=C}" 
+        <TextBlock Text="{Binding ElementName=mySlider, Path=Value, StringFormat=C, ConverterCulture=de-DE}" 
                    Margin="0 8 0 0" />
 
         <TextBox Text="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, FallbackValue=0}" 

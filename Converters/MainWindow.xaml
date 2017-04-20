@@ -18,7 +18,7 @@
         
         <CheckBox Content="Click me!" 
                   Name="myCheckBox"
-                  IsChecked="True"
+                  IsChecked="False"
                   Margin="0 8 0 0" 
                   HorizontalAlignment="Center"/>
 

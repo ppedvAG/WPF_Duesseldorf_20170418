@@ -27,5 +27,6 @@
     
     <StackPanel Margin="50">
         <Button Content="Click me!" Background="Orange" />
+        <Button Content="Click me! is important!" Background="Beige" />
     </StackPanel>
 </Window>
