@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnUserControls", "OwnUserC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metrodesign", "Metrodesign\Metrodesign.csproj", "{CE9FEB7F-F4F3-4162-86B5-C245A7045224}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloBlend", "HalloBlend\HalloBlend.csproj", "{3973E02D-71D5-4B46-8767-9177E2831839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesh3DExample", "Mesh3DExample\Mesh3DExample\Mesh3DExample.csproj", "{6E782126-E494-4A2B-839A-9F1E3F2CE875}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{CE9FEB7F-F4F3-4162-86B5-C245A7045224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE9FEB7F-F4F3-4162-86B5-C245A7045224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE9FEB7F-F4F3-4162-86B5-C245A7045224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3973E02D-71D5-4B46-8767-9177E2831839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3973E02D-71D5-4B46-8767-9177E2831839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3973E02D-71D5-4B46-8767-9177E2831839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3973E02D-71D5-4B46-8767-9177E2831839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E782126-E494-4A2B-839A-9F1E3F2CE875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E782126-E494-4A2B-839A-9F1E3F2CE875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E782126-E494-4A2B-839A-9F1E3F2CE875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E782126-E494-4A2B-839A-9F1E3F2CE875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

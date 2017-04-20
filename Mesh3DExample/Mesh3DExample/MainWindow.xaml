@@ -1,0 +1,149 @@
+﻿<Window x:Class="Mesh3DExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mesh3DExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Viewport3D Grid.Row="0" >
+            <!-- The Camera -->
+            <Viewport3D.Camera>
+                <PerspectiveCamera Position="1.5 0.5 5" 
+                                   LookDirection="0 0 -1" />
+            </Viewport3D.Camera>
+            
+            <!-- The Light -->
+            <ModelVisual3D>
+                <ModelVisual3D.Content>
+                    <Model3DGroup>
+                        <DirectionalLight Color="White" Direction="0 0 -1" />
+                        <AmbientLight Color="#FF444444" />
+                    </Model3DGroup>
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+
+            <ContainerUIElement3D>
+                <!--Linker Würfel-->
+                <ModelUIElement3D>
+                    <GeometryModel3D Geometry="{StaticResource suzanne}">
+                        <GeometryModel3D.Material>
+                            <DiffuseMaterial Brush="Yellow" />
+                        </GeometryModel3D.Material>
+                    </GeometryModel3D>
+                </ModelUIElement3D>
+
+                <!-- Rechter Würfel -->
+                <ModelUIElement3D>
+                    <GeometryModel3D Geometry="{StaticResource suzanne}">
+                        <GeometryModel3D.Material>
+                            <DiffuseMaterial Brush="Yellow" />
+                        </GeometryModel3D.Material>
+                    </GeometryModel3D>
+
+                    <ModelUIElement3D.Transform>
+                        <TranslateTransform3D OffsetX="2" />
+                    </ModelUIElement3D.Transform>
+                </ModelUIElement3D>
+
+                <ContainerUIElement3D.Transform>
+                    <Transform3DGroup>
+
+                        <!-- Rotate around X Axis -->
+                        <RotateTransform3D CenterX="1.5" CenterZ="0.5" CenterY="0.5">
+                            <RotateTransform3D.Rotation>
+                                <AxisAngleRotation3D Axis="1 0 0"
+                                                     Angle="{Binding ElementName=XSlider, Path=Value}" />
+                            </RotateTransform3D.Rotation>
+                        </RotateTransform3D>
+                        
+                        <!-- Rotate around Y Axis -->
+                        <RotateTransform3D CenterX="1.5" CenterZ="0.5" CenterY="0.5">
+                            <RotateTransform3D.Rotation>
+                                <AxisAngleRotation3D Axis="0 1 0"
+                                                    Angle="{Binding ElementName=YSlider, Path=Value}"/>
+                            </RotateTransform3D.Rotation>
+                        </RotateTransform3D>
+                        
+                        <!-- Rotate around Z Axis -->
+                        <RotateTransform3D CenterX="1.5" CenterZ="0.5" CenterY="0.5">
+                            <RotateTransform3D.Rotation>
+                                <AxisAngleRotation3D Axis="0 0 1"
+                                                    Angle="{Binding ElementName=ZSlider, Path=Value}"/>
+                            </RotateTransform3D.Rotation>
+                        </RotateTransform3D>
+                        
+                        <!-- Zoom -->
+                        <ScaleTransform3D CenterX="1.5" CenterY="0.5" CenterZ="0.5" 
+                                          ScaleX="{Binding ElementName=ScaleSlider, Path=Value}"
+                                          ScaleY="{Binding ElementName=ScaleSlider, Path=Value}"
+                                          ScaleZ="{Binding ElementName=ScaleSlider, Path=Value}"/>
+                        
+                        <!-- Move -->
+                        <TranslateTransform3D OffsetX="{Binding ElementName=MoveXSlider, Path=Value}" />
+                        <TranslateTransform3D OffsetY="{Binding ElementName=MoveYSlider, Path=Value}" />
+                        <TranslateTransform3D OffsetZ="{Binding ElementName=MoveZSlider, Path=Value}" />
+                    </Transform3DGroup>
+                </ContainerUIElement3D.Transform>
+            </ContainerUIElement3D>
+            
+        </Viewport3D>
+        
+        <StackPanel Grid.Row="1" 
+                    Margin="10">
+            <StackPanel.Resources>
+                <Style TargetType="Slider" >
+                    <Setter Property="Minimum" Value="-180" />
+                    <Setter Property="Maximum" Value="180" />
+                    <Setter Property="Value" Value="0" />
+                    <Setter Property="Width" Value="400" />
+                    <Setter Property="Margin" Value="8 4 0 0" />
+                </Style>
+            </StackPanel.Resources>
+
+            <!--X Axis-->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="X" />
+                <Slider Name="XSlider"/>
+            </StackPanel>
+            <!--Y Axis-->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Y" />
+                <Slider Name="YSlider"/>
+            </StackPanel>
+            <!--Z Axis-->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Z" />
+                <Slider Name="ZSlider"/>
+            </StackPanel>
+            
+            <!-- Zoom -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Scale" />
+                <Slider Name="ScaleSlider" Minimum="0.1" Maximum="2" Value="1"/>
+            </StackPanel>
+            
+            <!-- MoveX -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Move X" />
+                <Slider Name="MoveXSlider" Minimum="-5" Maximum="5" Value="0"/>
+            </StackPanel>
+            <!-- MoveY -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Move Y" />
+                <Slider Name="MoveYSlider" Minimum="-5" Maximum="5" Value="0"/>
+            </StackPanel>
+            <!-- MoveZ -->
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Move Z" />
+                <Slider Name="MoveZSlider" Minimum="-5" Maximum="5" Value="0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
